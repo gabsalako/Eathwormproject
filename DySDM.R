@@ -233,15 +233,5 @@ Px4+geom_point(aes(group = seq_along(Density))) +
 
 
 
-QDY <- read.csv("Unfiltered_quelea_occurrence.csv") 
-DF_QDy <- data.frame (QDY)
-DF_QDy <- na.omit(DF_QDy)
-head(DF_QDy)
-str(DF_QDy)
 
-sample_occ_filtered <- spatiotemp_check(occ.data = DF_QDy ,
-                                        na.handle = "exclude",
-                                        date.handle = "exclude",
-                                        date.res = "year",
-                                        coord.handle = "exclude",
-                                        duplicate.handle ="exclude")
+                                      

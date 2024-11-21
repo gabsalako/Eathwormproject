@@ -10,12 +10,8 @@ jobs:
 
     steps:
     - uses: Eathwormproject
-    - name: Run a multi-line script
+    - name: Run a single-line script
       run: Endgsdym <- read.csv("Abg_SDMdyEndog.csv" )# for line trends
-head(Endgsdym)
-str(Endgsdym)
-DFEndgDy <- data.frame(Endgsdym)
-head(DFEndgDy)
     - name: Run a multi-line script
       run: |
         Endgsdym[,'Observation.date..Sampling.event.'] = as.factor(Endgsdym[,'Observation.date..Sampling.event.'])#categorical to display indiv. date
